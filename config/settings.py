@@ -137,3 +137,7 @@ REST_FRAMEWORK = {
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "PAGE_SIZE": 10,
 }
+
+# After logging in or out through the browsable API, go back to the API
+LOGIN_REDIRECT_URL = "/api/"
+LOGOUT_REDIRECT_URL = "/api/"
